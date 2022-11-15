@@ -12,7 +12,8 @@ setup(
         '': ['*'],
     },
     include_package_data=True,
-    install_requires=['pyaudio',],
+    python_requires='>=3',
+    install_requires=['pyaudio','cffi>=1.0', 'requests', 'tqdm', 'srt', 'websockets'],
     entry_points={
         'console_scripts': [
             'LiveCaptionLinux = LiveCaptionLinux.__main__:init',
