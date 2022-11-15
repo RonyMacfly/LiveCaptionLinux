@@ -46,3 +46,7 @@ def start():
     stream.stop_stream()
     stream.close()
     p.terminate()
+
+    
+if __name__ == '__main__':
+    start()

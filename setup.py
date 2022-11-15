@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='LiveCaptionLinux',
@@ -7,6 +7,11 @@ setup(
     url='https://github.com/RonyMacfly/LiveCaptionLinux',
     author='Rony Macfly',
     author_email='rony.macfly@gmail.com',
-    packages=['LiveCaptionLinux'],
+    packages=find_packages(),
     install_requires=['pyaudio',],
+    entry_points={
+        'console_scripts': [
+            'LiveCaptionLinux = LiveCaptionLinux.__main__:init',
+        ],
+    },
 )
