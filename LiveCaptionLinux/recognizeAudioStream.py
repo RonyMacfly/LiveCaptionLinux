@@ -7,11 +7,11 @@ def getText(text):
 	res = json.loads(text)
 	return res["text"]
 
-from live_caption_linux.voskLocal import Model, KaldiRecognizer, SetLogLevel
+from LiveCaptionLinux.voskLocal import Model, KaldiRecognizer, SetLogLevel
 import subprocess
 
 def start():
-    pathModel = "live_caption_linux/vosk-model-en-us-daanzu-20200905-lgraph"
+    pathModel = dirname(__file__) + "/vosk-model-en-us-daanzu-20200905-lgraph"
     voskModel = Model(pathModel)
     rec       = KaldiRecognizer(voskModel, 16000)
     

@@ -1,14 +1,12 @@
 from setuptools import setup
 
-from live_caption_linux import __version__
-
 setup(
-    name='live_caption_linux',
-    version=__version__,
-
+    name='LiveCaptionLinux',
+    version='1.0',
+    description='Live Captions in Linux for Discord, Telegram, Google Meet, Slack, Skype etc.',
     url='https://github.com/RonyMacfly/LiveCaptionLinux',
     author='Rony Macfly',
     author_email='rony.macfly@gmail.com',
-
-    py_modules=['live_caption_linux'],
+    packages=['LiveCaptionLinux'],
+    install_requires=['pyaudio',],
 )

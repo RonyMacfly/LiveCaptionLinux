@@ -1,4 +1,4 @@
 
-from live_caption_linux import init
+from LiveCaptionLinux import init
 
 init()
