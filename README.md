@@ -1,11 +1,6 @@
 
 # Usage
 
-From PyPI:
-```
-pip3 install []
-```
-
 From Pip:
 ```
 1) pip3 install git+https://github.com/RonyMacfly/LiveCaptionLinux
